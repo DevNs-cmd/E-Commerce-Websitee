@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaMart — Your Everything Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="NovaMart — premium, smooth, and modern ecommerce demo with fast navigation and interactive shopping experience.">
+</head>
+<body data-theme="light">
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-top container">
+      <div class="logo" aria-label="NovaMart home">
+        <a href="index.html" class="logo-link">
+          <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true">
+            <rect width="24" height="24" rx="6" fill="currentColor"></rect>
+            <text x="12" y="16" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial">NM</text>
+          </svg>
+          <span class="brand-name">NovaMart</span>
+        </a>
+      </div>
+
+      <!-- Search bar -->
+      <div class="search" role="search" aria-label="Product search">
+        <form id="searchForm" action="#" method="get" autocomplete="off">
+          <label for="searchInput" class="visually-hidden">Search products</label>
+          <input id="searchInput" name="q" type="search" placeholder="Search products, brands, and deals..." aria-label="Search"/>
+          <button type="submit" class="search-btn" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+              <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" fill="none"></circle>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Utilities -->
+      <div class="utilities" role="navigation" aria-label="Header utilities">
+        <button class="theme-toggle" id="themeToggle" aria-pressed="false" data-action="toggle-theme" title="Switch dark / light mode">
+          <span class="visually-hidden">Theme</span>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"></circle></svg>
+        </button>
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist" data-action="open-wishlist">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9-7A6.5 6.5 0 0 1 5 4.5c1.76 0 3.4.87 4 2.09C9.6 5.37 11.24 4.5 13 4.5A6.5 6.5 0 0 1 22 14c-2 2.65-9 7-9 7z" fill="currentColor"></path></svg>
+          <span class="badge" aria-hidden="true">3</span>
+        </a>
+        <a href="cart.html" class="icon-btn" aria-label="Cart" data-action="open-cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.2" fill="none"></path><circle cx="10" cy="20" r="1" fill="currentColor"></circle><circle cx="18" cy="20" r="1" fill="currentColor"></circle></svg>
+          <span class="badge" aria-hidden="true">2</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav container" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list" id="navList">
+        <li><a href="category-electronics.html">Electronics</a></li>
+        <li><a href="category-fashion.html">Fashion</a></li>
+        <li><a href="category-home.html">Home & Kitchen</a></li>
+        <li><a href="category-beauty.html">Beauty & Wellness</a></li>
+        <li><a href="category-grocery.html">Grocery & Essentials</a></li>
+        <li><a href="deals.html" class="hot">Today's Deals</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Promotional hero">
+      <div class="hero-left">
+        <h1 class="hero-title">Discover Everything You Love, Delivered Fast</h1>
+        <p class="hero-sub">Exclusive deals, premium brands, and effortless shopping — all in one place.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="deals.html">Shop Today's Deals</a>
+          <a class="btn btn-ghost" href="new-arrivals.html">Explore New Arrivals</a>
+        </div>
+        <p class="hero-tagline">Free shipping on orders over ₹999 | Easy returns | 24/7 customer support</p>
+      </div>
+      <div class="hero-right">
+        <img src="modern-promotional-sales-banner-design_1017-9787.jpg" alt="Featured banner showcasing top deals and brands" class="small-hero-img"/>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-section best-sellers" aria-label="Best selling products">
+      <header class="section-header">
+        <h2>Bestsellers of the Month</h2>
+        <a href="shop-all.html" class="view-all">View all products</a>
+      </header>
+      <div class="product-grid" role="list">
+        <article class="product-card" role="listitem">
+          <a href="#">
+            <figure class="product-media small-product-img">
+              <img src="smart.avif" alt="Smartwatch NovaTime Pro" />
+            </figure>
+            <div class="product-body">
+              <h3 class="product-title">NovaTime Pro Smartwatch</h3>
+              <p class="product-desc">Stay connected, track fitness, and style your wrist with elegance.</p>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-sm" data-action="add-to-cart">Add to cart</button>
+            <button class="icon-btn" data-action="wishlist">♡</button>
+          </div>
+        </article>
+        <article class="product-card" role="listitem">
+          <a href="#">
+            <figure class="product-media small-product-img">
+              <img src="51f7KKP25PL.jpg" alt="Noise-cancelling headphones" />
+            </figure>
+            <div class="product-body">
+              <h3 class="product-title">NovaSound Wireless Headphones</h3>
+              <p class="product-desc">Experience crystal-clear sound and immersive listening on the go.</p>
+            </div>
+          </a>
+          <div class="product-actions">
+            <button class="btn btn-sm" data-action="add-to-cart">Add to cart</button>
+            <button class="icon-btn" data-action="wishlist">♡</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brands & Categories -->
+    <section class="brands" aria-label="Featured brands">
+      <h2>Shop Trusted Brands</h2>
+      <div class="brand-grid small-brand-img">
+        <img src="iphone_17_pro_max_design_e45124ed-99b6-49ee-8de2-97f14a77c94c.webp" alt="New Model of IPHONE" />
+        <img src="main2_b66dce6b-710d-49cb-9d1c-2bc8c9c0ab15_600x.webp" alt="Boat HeadPhones" />
+        <img src="633ab243ee02352c3f110aa9-asus-rog-strix-scar-15-gaming-laptop.jpg" alt="Asus Gaming Laptop" />
+        <img src="zenz.avif" alt="Gen-Z choice" />
+      </div>
+    </section>
+
+    <section class="categories" aria-label="Category highlights">
+      <h2>Shop by Category</h2>
+      <ul class="category-list">
+        <li><a href="category-electronics.html">Gadgets & Devices</a></li>
+        <li><a href="category-fashion.html">Clothing & Accessories</a></li>
+        <li><a href="category-home.html">Home & Kitchen Essentials</a></li>
+        <li><a href="category-kids.html">Kids & Toys</a></li>
+        <li><a href="category-sports.html">Sports & Outdoors</a></li>
+        <li><a href="category-books.html">Books & Stationery</a></li>
+      </ul>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews" aria-label="Customer testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="review-grid">
+        <div class="review-card">
+          <p>"Fast delivery and excellent products. NovaMart never disappoints!"</p>
+          <span>- Ananya S.</span>
+        </div>
+        <div class="review-card">
+          <p>"Seamless shopping experience with amazing deals every day."</p>
+          <span>- Rohan P.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" aria-label="Newsletter signup">
+      <div class="newsletter-inner">
+        <h2>Never Miss a Deal</h2>
+        <p>Subscribe to get the latest offers, exclusive discounts, and new arrivals delivered straight to your inbox.</p>
+        <form action="#" class="newsletter-form">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-col">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="help.html">Help Center</a></li>
+          <li><a href="returns.html">Returns & Refunds</a></li>
+          <li><a href="shipping.html">Shipping Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>About NovaMart</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="press.html">Press & Media</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year">2025</span> NovaMart. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
